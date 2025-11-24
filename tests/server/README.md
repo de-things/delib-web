@@ -1,5 +1,5 @@
 ## Pre-requirements
-You need to install `NodeJS` runtime for JavaScript execution.
+You need to install `nodejs` runtime for JavaScript execution.
 
 ## Usage
 Install server dependencies running in terminal a command below:
