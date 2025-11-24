@@ -1,0 +1,18 @@
+<html><head><link rel="icon" href="/"></head>
+    <body>
+        <script src="../delib.js"></script>
+        <script>
+            var wlan_device = new DelibDevice("127.0.0.1", "TEST_SECRET");
+
+            wlan_device.call("test").then(res => {
+                console.log(`WLAN RESPONSE: ${res}`);
+            });
+
+            var eth_device = new DelibDevice("127.0.0.1");
+
+            eth_device.call("test").then(res => {
+                console.log(`ETH RESPONSE: ${res}`);
+            });
+        </script>
+    </body>
+</html>
