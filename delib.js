@@ -2,6 +2,11 @@
  * Class to handle a delib device instance.
  */
 class DelibDevice {
+    /**
+     * 
+     * @param {*} ip Device IP to communicate with.
+     * @param {*} secret Device secret to communicate using `WLAN`. Don't define it if you plan to use `Ethernet` instead.
+     */
     constructor(ip, secret = null) {
         this.ip = ip;
         this.secret = secret;
